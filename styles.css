@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position:relative;
+
+}
+canvas{
+  box-sizing: border-box;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  z-index: 0;
+
+}
+.bi{
+  height: 70px;
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  background: url(img/spikes.png);
+  background-size: 50ch;
+  background-repeat: repeat-x;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.spikes{
+  position: absolute;
+  z-index: 1;
+}
+
+.gameover div {
+  border-radius: 20px;
+  font-size: 1.1em;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+p{
+  margin: 0;
+}
+.gameover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  margin: auto;
+  border-radius: 15px;
+  width: min(600px,90vw);
+  backdrop-filter: blur(10px);
+  background-color: black;
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 3em;
+  height: 70%;
+  width: 40%;
+
+}
+
+#img{
+  display:  none !important;
+}
